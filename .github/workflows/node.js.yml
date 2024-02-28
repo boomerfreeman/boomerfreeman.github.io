@@ -28,10 +28,6 @@ jobs:
         run: npm run test
       - name: Run e2e tests
         run: npm run test:e2e
-      - name: Upload public artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
       - name: Upload dist artifact
         uses: actions/upload-pages-artifact@v3
         with:
